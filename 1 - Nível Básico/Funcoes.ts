@@ -1,9 +1,9 @@
 // Função simples com retorno
-function soma(num1: number, num2: number): number {
+function somar(num1: number, num2: number): number {
     return num1 + num2
 };
 
-console.log(soma(1,2));
+console.log(somar(1,2));
 
 // Função simples sem retorno
 function olaMundo(): void {
@@ -31,7 +31,22 @@ console.log(saudacao2('Arthur'));
 console.log(saudacao2('Arthur', 'Lunkes'));
 
 // Função como tipo (ta em branco pq to tentando entender)
+type OperacaoMatematica = (a: number, b: number) => number;
 
+function soma(a: number, b: number): number {
+  return a + b;
+}
+
+function subtracao(a: number, b: number): number {
+  return a - b;
+}
+
+function calculadora(operacao: OperacaoMatematica, a: number, b: number): number {
+  return operacao(a, b);
+}
+
+console.log(calculadora(soma, 4, 2));
+console.log(calculadora(subtracao, 7, 3));
 
 // Função arrow functions
 const saudacao3 = (nome: string): string => {
