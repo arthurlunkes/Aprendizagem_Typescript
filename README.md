@@ -1,2 +1,9 @@
 # Aprendizagem_Typescript
- Minha aprendizagem em Typescript
+
+## Descrição
+ Minha aprendizagem em Typescript.
+ 
+## Nível básico
+- Variáveis
+- Tipos de dados
+- Funções
